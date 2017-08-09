@@ -28,7 +28,22 @@
 	<![endif]-->
 </head>
 <body>
-<h1>hiiiiii</h1>
+	<div class="container">
+		<div class="doggo">
+    <div class="doggo__options">
+        <select class="doggo__select" data-ref="doggoSelect"></select>
+        <select class="doggo__select" data-ref="doggoCount">
+            <option value="">Doggo Count</option>
+            <option>1</option>
+            <option>10</option>
+            <option>20</option>
+        </select>
+    </div>
+
+    <div class="doggo__results" data-ref="doggoResults"></div>
+    <button class="button button-colored doggo__button js-hide" data-ref="refreshDoggo">Refresh Image(s)</button>
+</div>
+	</div>
 
 	<script src="/assets/js/script.min.js"></script>
 </body>

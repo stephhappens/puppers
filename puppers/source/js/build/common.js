@@ -8,7 +8,15 @@ Wee.fn.make('common', {
 		this.$private.method();
 	}
 }, {
-	method: function() {
-		// ...
+	method: function(populateDoggos) {
+		Wee.api.breeds(function(data) {
+    if (data.length) {
+        $('ref:doggoSelect').html(
+            $.view.render('doggoOptions', {
+                doggos: data
+            })
+        );
+    }
+});
 	}
 });

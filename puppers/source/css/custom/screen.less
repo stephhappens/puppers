@@ -1,43 +1,38 @@
 /*------------------------------------*\
-	# Global
-\*------------------------------------*/
-
-#global {
-	// Global helpers and state modifiers
-}
-
-
-
-
-
-/*------------------------------------*\
-	# General
+    # Body
 \*------------------------------------*/
 
 body {
-	// ...
+    .background(@lightestGray);
 }
 
-
-
-
-
 /*------------------------------------*\
-	# Header
+    # Doggos
 \*------------------------------------*/
 
-.header {
-	// ...
-}
-
-
-
-
-
-/*------------------------------------*\
-	# Footer
-\*------------------------------------*/
-
-.footer {
-	// ...
+.doggo {
+    .background(@white);
+    .border(@lighterGray);
+    .centered-block(50);
+    .margin(top; 6);
+    .padding(2);
+    &__options {
+        .flexbox();
+        .justify-content(space-between);
+    }
+    &__button {
+        .fill();
+        .spaced(2);
+    }
+    &__select {
+        .spaced(2);
+        .width(48%);
+    }
+    &__image {
+        .fill();
+        .spaced(2);
+        &:last-child {
+            .spaced(0);
+        }
+    }
 }

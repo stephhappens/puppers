@@ -1,0 +1,4 @@
+<option value="">Select a Doggo</option>
+{{ #doggos|each }}
+    <option value="{{ . }}">{{ .|ucfirst }}</option>
+{{ /doggos }}
